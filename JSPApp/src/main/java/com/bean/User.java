@@ -4,6 +4,7 @@ public class User {
 	private String username;
 	private String password;
 
+	// Getters and setters
 	public String getUsername() {
 		return username;
 	}
@@ -19,5 +20,4 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
 }
