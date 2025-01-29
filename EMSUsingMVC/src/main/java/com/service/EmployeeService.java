@@ -16,7 +16,7 @@ public class EmployeeService {
 		} else if (ed.storeEmployee(emp) > 0) {
 			return "Record stored successfully";
 		} else {
-			return "Record din't store";
+			return "Record wasn't stored";
 		}
 	}
 
