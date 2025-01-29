@@ -1,7 +1,6 @@
 package com.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -12,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.bean.Employee;
+import com.service.EmployeeService;
 
 @WebServlet("/RetrieveEmployeeController")
 public class RetrieveEmployeeController extends HttpServlet {
@@ -23,7 +23,6 @@ public class RetrieveEmployeeController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		PrintWriter pw = response.getWriter();
 		EmployeeService es = new EmployeeService();
 		List<Employee> listOfEmployee = es.findAllEmployee();
 		request.setAttribute("obj", listOfEmployee); // we store rs object in request scope.
