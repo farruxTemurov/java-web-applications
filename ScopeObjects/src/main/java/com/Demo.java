@@ -53,8 +53,7 @@ public class Demo extends HttpServlet {
 //		request.setAttribute("eid", id);
 //		request.setAttribute("ename", name);
 //		request.setAttribute("esalary", salary);
-//		response.sendRedirect("welcome.jsp");		// we get output of target page as well as it 
-		// generate new request
+//		response.sendRedirect("welcome.jsp");		// we get output of target page as well as it generates new request
 
 		// 4th approach
 		HttpSession hs = request.getSession();
