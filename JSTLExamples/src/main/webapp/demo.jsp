@@ -25,13 +25,12 @@
 	<p>Sub of two number is ${100-200}</p>
 	<p>Mul of two number is ${100*200}</p>
 	<p>Div of two number is ${100/200}</p>
-	<p>Div of two number is ${100 div 200}</p>
 	<p>Gt of two number is ${100 > 200}</p>
 	<p>GT of two number is ${100 gt 200}</p>
 	<p>Lt of two number is ${100 < 200}</p>
 	<p>Lt of two number is ${100 lt 200}</p>
 	<br />
-	<core:set var="name" value="Akash Kale!"></core:set>
+	<core:set var="name" value="Farrukh!"></core:set>
 	<br /> Msg :
 	<core:out value="Welcome to JSTL"></core:out>
 	<br /> Value of name is :
