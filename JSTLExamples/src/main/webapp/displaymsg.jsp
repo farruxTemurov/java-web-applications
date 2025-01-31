@@ -9,19 +9,17 @@
 </head>
 <body>
 	<h2>Using JSP to get information</h2>
-	<%!
-String msg;
-String tech[];
-%>
+	<%!String msg;
+	String tech[];%>
 	<%
-msg = (String)session.getAttribute("msg");
-out.println(msg);
-out.println("<br/>");
-tech = (String[])session.getAttribute("tech");
-for(String t:tech){
-	out.println(t+"<br/>");
-}
-%>
+	msg = (String) session.getAttribute("msg");
+	out.println(msg);
+	out.println("<br/>");
+	tech = (String[]) session.getAttribute("tech");
+	for (String t : tech) {
+		out.println(t + "<br/>");
+	}
+	%>
 	<h2>Using JSTL to get information</h2>
 	<core:out value="${sessionScope.msg}"></core:out>
 	<h2>All technologies</h2>
@@ -30,5 +28,6 @@ for(String t:tech){
 			<li><core:out value="${t}"></core:out></li>
 		</core:forEach>
 	</ul>
+	<a href="index.html">Back to Main</a>
 </body>
 </html>

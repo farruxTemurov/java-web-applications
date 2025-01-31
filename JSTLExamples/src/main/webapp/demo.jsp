@@ -38,5 +38,6 @@
 	<br /> Value of name is :
 	<core:out value="${name}"></core:out>
 	<br />
+	<a href="index.html">Back to Main</a>
 </body>
 </html>
