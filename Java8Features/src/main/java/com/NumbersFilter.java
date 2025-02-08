@@ -12,6 +12,15 @@ public class NumbersFilter {
 		numbers.stream().filter(n -> n % 2 != 0) // Keep only odd numbers
 				.forEach(System.out::println); // Print each number
 
+		// Using Lambda & Stream to filter and print EVEN numbers
+		System.out.println("~~~~~~~~~~~~~~~~~");
+		numbers.stream().filter(n -> n % 2 == 0) // keep only even numbers
+				.forEach(System.out::println);
+
+		System.out.println("~~~~~~~~~~~~~~~~~");
+		// Using Lambda & Stream to filter and print numbers less than or equal to 5
+		numbers.stream().filter(n -> n <= 5).forEach(System.out::println);
+		;
 	}
 
 }
