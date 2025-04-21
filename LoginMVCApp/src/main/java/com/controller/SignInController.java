@@ -35,7 +35,7 @@ public class SignInController extends HttpServlet {
 			throws ServletException, IOException {
 		PrintWriter pw = response.getWriter();
 
-		// receive the value from form
+		// receiving the value from the form
 		String emailid = request.getParameter("emailid");
 		String password = request.getParameter("password");
 
@@ -44,7 +44,7 @@ public class SignInController extends HttpServlet {
 		ll.setEmailid(emailid);
 		ll.setPassword(password);
 
-		// create service class object and pass the login object
+		// creating a service class object and passing the login object
 		LoginService ls = new LoginService();
 		String result = ls.signIn(ll);
 		RequestDispatcher rd1 = request.getRequestDispatcher("success.jsp");
