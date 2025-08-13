@@ -23,7 +23,6 @@ public class ProductController extends HttpServlet {
 
 	public ProductController() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
