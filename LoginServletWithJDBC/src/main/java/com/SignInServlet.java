@@ -29,10 +29,6 @@ public class SignInServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public SignInServlet() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -47,7 +43,7 @@ public class SignInServlet extends HttpServlet {
 		String emailid = request.getParameter("emailId");
 		String password = request.getParameter("password");
 
-		// it is use to navigate from one page to another page
+		// it is used to navigate from one page to another page
 		RequestDispatcher rd1 = request.getRequestDispatcher("Home");
 		RequestDispatcher rd2 = request.getRequestDispatcher("login.html");
 
