@@ -11,7 +11,7 @@
 	<%
 	user = request.getParameter("emailid");
 	%>
-	<font color="red" size=6> Welcome user <%=user%></font>
+	<font color="purple" size=6> Welcome user <%=user%></font>
 	<br />
 	<a href="login.jsp">Logout</a>
 </body>
